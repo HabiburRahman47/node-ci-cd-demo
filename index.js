@@ -13,6 +13,11 @@ app.get('/', (req, res) => {
     res.send('CI/CD Demo App Running!');
 });
 
+// Home route
+app.get('/home', (req, res) => {
+    res.send('Welcome to the Home Page!');
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
